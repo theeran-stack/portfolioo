@@ -323,18 +323,13 @@ export const forgeWeeks: ForgeWeekRecord[] = [
     ],
     galleryImages: [
       {
-        url: '/img/week-7/freertos-esp32-node.jpeg',
-        caption: 'Operational ESP32 Hardware Node Running FreeRTOS Preemptive Kernel',
+        url: '/img/week-3/Electronics/DSC_9930.jpg',
+        caption: 'Physical Circuit Bench Testing & Sensor Microcontroller Setup',
         type: 'image'
       },
       {
-        url: '/img/week-7/hardware-setup-sd.jpeg',
-        caption: 'Hardware Wiring Assembly: ESP32 to MicroSD Card Adapter via SPI',
-        type: 'image'
-      },
-      {
-        url: '/img/week-7/week7-photo1.png',
-        caption: 'Serial Monitor Verification: FreeRTOS Task Scheduler & SD Write Logs',
+        url: '/img/week-1/IMG_20260810_105134.jpg.jpeg',
+        caption: 'Hardware Wiring Assembly: ESP32 Firmware Development Bench',
         type: 'image'
       }
     ],
@@ -526,18 +521,33 @@ export const forgeWeeks: ForgeWeekRecord[] = [
     ],
     galleryImages: [
       {
-        url: '/img/week-7/freertos-esp32-node.jpeg',
-        caption: 'ESP32 Dual-Core Prototyping Node Bench Setup with Sensor Interfacing',
+        url: '/img/week-7/task-1/task-1.jpg',
+        caption: 'Task 1: Testing ESP32 Local Web Server & LED Control on Test Bench',
         type: 'image'
       },
       {
-        url: '/img/week-7/hardware-setup-sd.jpeg',
-        caption: 'Hardware Sensor Testing Bench with MicroSD Telemetry Logger',
+        url: '/img/week-7/task-2/task-2.jpg',
+        caption: 'Task 2: Adafruit IO Cloud Dashboard & MQTT Communication Bench',
         type: 'image'
       },
       {
-        url: '/img/week-7/week7-photo1.png',
-        caption: 'ESP32 Wi-Fi & MQTT Wireless Cloud Integration Architecture',
+        url: '/img/week-7/task-3/3.jpeg',
+        caption: 'Task 3: Physical Hardware Circuit Bench with Sensor & Actuator Nodes',
+        type: 'image'
+      },
+      {
+        url: '/img/week-7/task-3/task-3.jpg',
+        caption: 'Task 3: Mobile Event Automation Trigger via IFTTT & Adafruit IO',
+        type: 'image'
+      },
+      {
+        url: '/img/week-7/task-4/task-4.jpg',
+        caption: 'Task 4: Firebase IoT Environmental Monitoring & Appliance Control Dashboard',
+        type: 'image'
+      },
+      {
+        url: '/img/week-7/task-5/5.jpeg',
+        caption: 'Task 5: Unified IoT Bench with ESP32, DHT11, LDR, and Relay Module',
         type: 'image'
       }
     ],

@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw task uploads (media served from /public/img/week-7/)
+/Task 1/
+/Task 2/
+/Task 3/
+/Task 4/
+/Task 5/

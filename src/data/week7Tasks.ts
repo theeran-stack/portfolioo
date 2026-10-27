@@ -8,7 +8,7 @@ export const week7Tasks: ForgeActivityTask[] = [
     category: 'Web & Microcontroller',
     shortDescription:
       'Designed and deployed an embedded HTTP web server on the ESP32 microcontroller using Arduino IDE to control an LED through a browser-based interface.',
-    thumbnailUrl: '/img/week-7/freertos-esp32-node.jpeg',
+    thumbnailUrl: '/img/week-7/task-1/task-1.jpg',
     technologies: ['ESP32', 'Arduino IDE', 'C++', 'HTML5', 'CSS3', 'HTTP', 'GPIO'],
     overview: {
       objective:
@@ -254,18 +254,13 @@ String getHtmlPage() {
     evidence: {
       images: [
         {
-          url: '/img/week-7/freertos-esp32-node.jpeg',
-          caption: 'ESP32 Node Running Web Server with Active GPIO LED Circuit',
-          type: 'image'
-        },
-        {
-          url: '/img/week-7/week7-photo1.png',
-          caption: 'Serial Monitor Log: Wi-Fi Association & IP Assignment Verification',
+          url: '/img/week-7/task-1/task-1.jpg',
+          caption: 'Task 1: Testing ESP32 Local Web Server & HTML LED Control on Test Bench',
           type: 'image'
         }
       ],
-      videoUrl: '/img/week-7/freertos-demo.mp4',
-      videoCaption: 'Demonstration of ESP32 Serving HTML Interface and Actuating LED Output',
+      videoUrl: '/img/week-7/task-1/task-1.mp4',
+      videoCaption: 'Task 1 Live Demonstration: ESP32 Web Server & HTML LED Control',
       terminalLogs: `[BOOT] ESP32 Chip Revision: 1
 Connecting to Wi-Fi SSID: Home_Network_2.4G
 .....
@@ -301,7 +296,7 @@ HTTP Web Server started on port 80
     category: 'Cloud-Based IoT Control',
     shortDescription:
       'Extended the local ESP32 web-control concept into a cloud-connected IoT system using Adafruit IO and MQTT.',
-    thumbnailUrl: '/img/week-7/hardware-setup-sd.jpeg',
+    thumbnailUrl: '/img/week-7/task-2/task-2.jpg',
     technologies: ['ESP32', 'Adafruit IO', 'MQTT', 'Cloud IoT', 'C++', 'Pub/Sub', 'Arduino IDE'],
     overview: {
       objective:
@@ -526,16 +521,13 @@ void MQTT_connect() {
     evidence: {
       images: [
         {
-          url: '/img/week-7/hardware-setup-sd.jpeg',
-          caption: 'ESP32 Connected via MQTT Receiving Remote Commands',
-          type: 'image'
-        },
-        {
-          url: '/img/week-7/freertos-esp32-node.jpeg',
-          caption: 'Hardware Actuator Driven by Cloud Feed Update',
+          url: '/img/week-7/task-2/task-2.jpg',
+          caption: 'Task 2: Adafruit IO Cloud Dashboard & MQTT Hardware Control Bench',
           type: 'image'
         }
       ],
+      videoUrl: '/img/week-7/task-2/task-2.mp4',
+      videoCaption: 'Task 2 Live Demonstration: Adafruit IO Dashboard & MQTT Remote Control',
       terminalLogs: `Connecting to Wi-Fi: Home_Network_2.4G
 ..
 Wi-Fi Connected!
@@ -568,7 +560,7 @@ Connecting to Adafruit IO MQTT Broker... MQTT Broker Connected!
     category: 'IoT Automation',
     shortDescription:
       'Explored event-driven IoT automation using IFTTT, Adafruit IO, MQTT, and an ESP32.',
-    thumbnailUrl: '/img/week-2/MIT/Nodes.png',
+    thumbnailUrl: '/img/week-7/task-3/3.jpeg',
     technologies: ['IFTTT', 'Adafruit IO', 'MQTT', 'ESP32', 'Automation', 'Cloud Webhooks', 'Event Triggers'],
     overview: {
       objective:
@@ -704,16 +696,18 @@ Connecting to Adafruit IO MQTT Broker... MQTT Broker Connected!
     evidence: {
       images: [
         {
-          url: '/img/week-2/MIT/Nodes.png',
-          caption: 'Event-Driven Automation Node Architecture & Feed Binding',
+          url: '/img/week-7/task-3/3.jpeg',
+          caption: 'Task 3: Physical Hardware Circuit & Sensor Interfacing Setup on Breadboard',
           type: 'image'
         },
         {
-          url: '/img/week-7/freertos-esp32-node.jpeg',
-          caption: 'ESP32 Actuator Fired Automatically via IFTTT Event Pipeline',
+          url: '/img/week-7/task-3/task-3.jpg',
+          caption: 'Task 3: Mobile Event Automation Trigger via IFTTT & Adafruit IO',
           type: 'image'
         }
       ],
+      videoUrl: '/img/week-7/task-3/task-3.mp4',
+      videoCaption: 'Task 3 Live Demonstration: IFTTT + Adafruit IO Event-Driven Automation',
       terminalLogs: `[SYSTEM] Time: 18:00:02 IST
 [IFTTT] Applet #1049281 Triggered: Date & Time Event
 [ADAFRUIT IO] Received API Request: Write 'ON' to 'theeran/feeds/led-control'
@@ -744,7 +738,7 @@ Connecting to Adafruit IO MQTT Broker... MQTT Broker Connected!
     category: 'Environmental Monitoring and Remote Control',
     shortDescription:
       'Explored an ESP32-based environmental monitoring and remote bulb-control system using Firebase, DHT11, and LDR sensors.',
-    thumbnailUrl: '/img/week-3/Electronics/DSC_9930.jpg',
+    thumbnailUrl: '/img/week-7/task-4/task-4.jpg',
     technologies: ['ESP32', 'Firebase Realtime Database', 'DHT11', 'LDR Sensor', 'Relay Module', 'WebSockets', 'C++'],
     overview: {
       objective:
@@ -994,16 +988,13 @@ void loop() {
     evidence: {
       images: [
         {
-          url: '/img/week-3/Electronics/DSC_9930.jpg',
-          caption: 'Breadboard Circuit with DHT11, LDR Divider, and ESP32 DevKit',
-          type: 'image'
-        },
-        {
-          url: '/img/week-2/MIT/User Dashboard.jpeg',
-          caption: 'Web Telemetry Dashboard Displaying Real-Time Sensor Gauges and Bulb Switch',
+          url: '/img/week-7/task-4/task-4.jpg',
+          caption: 'Task 4: Firebase IoT Realtime Telemetry Dashboard & Bulb Remote Actuation',
           type: 'image'
         }
       ],
+      videoUrl: '/img/week-7/task-4/task-4.mp4',
+      videoCaption: 'Task 4 Live Demonstration: Firebase IoT Monitoring Dashboard & Control',
       terminalLogs: `Wi-Fi Connected! IP: 192.168.1.108
 Firebase Realtime Stream Listener Active on /controls
 [TELEMETRY] Temp: 28.4 C, Humidity: 64.0 %, Light: 72 % (Raw: 2950)
@@ -1036,7 +1027,7 @@ Firebase Realtime Stream Listener Active on /controls
     category: 'IoT Monitoring and Data Management',
     shortDescription:
       'Explored an integrated IoT monitoring workflow involving environmental sensing, automatic lighting, historical records, and data export.',
-    thumbnailUrl: '/img/week-2/MIT/Location.png',
+    thumbnailUrl: '/img/week-7/task-5/5.jpeg',
     technologies: ['Firebase RTDB', 'ESP32', 'Edge Automation', 'Data Logging', 'CSV Export', 'NTP Clock', 'Time-Series'],
     overview: {
       objective:
@@ -1276,16 +1267,18 @@ void loop() {
     evidence: {
       images: [
         {
-          url: '/img/week-2/MIT/Location.png',
-          caption: 'Telemetry Log & Geographic Node Data Verification',
+          url: '/img/week-7/task-5/5.jpeg',
+          caption: 'Task 5: Complete IoT Test Bench with ESP32, DHT11, LDR Sensor, and Relay Bulb Module',
           type: 'image'
         },
         {
-          url: '/img/week-2/MIT/Nodes.png',
-          caption: 'Historical Time-Series Node Logging in Firebase Cloud',
+          url: '/img/week-7/task-5/task-5.jpg',
+          caption: 'Task 5: Autonomous Edge Hysteresis & Cloud Historical Telemetry Export',
           type: 'image'
         }
       ],
+      videoUrl: '/img/week-7/task-5/task-5.mp4',
+      videoCaption: 'Task 5 Live Demonstration: Firebase Logging, Automation & Data Export',
       terminalLogs: `NTP Time Synchronized: Tue Oct 27 18:04:12 IST 2026
 [AUTO EDGE] Dark detected (22% < 30%) -> Auto Bulb ON
 [HISTORICAL LOG] Pushed record at epoch 1761569052 -> ID: -O7xKb...
