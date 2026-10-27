@@ -80,7 +80,7 @@ export default function EpisodeModal({ episode, onClose }: EpisodeModalProps) {
 
             <button
               onClick={onClose}
-              aria-label="Close Episode Details"
+              aria-label="Close Week Details"
               className="p-2 rounded-lg bg-[var(--bg-surface)] border border-[var(--border-subtle)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--border-hover)] transition-all cursor-pointer"
             >
               <X className="w-5 h-5" />

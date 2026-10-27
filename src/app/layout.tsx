@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Theeran P. | Computer Science Engineer & Creative Technologist',
     description:
-      'Bridging Hardware, Software & Cinematic Storytelling. Explore verified IoT projects, FreeRTOS systems, and Forge ProtoSem episodes.',
+      'Bridging Hardware, Software & Cinematic Storytelling. Explore verified IoT projects, FreeRTOS systems, and Forge ProtoSem weekly journal records.',
     type: 'website',
     locale: 'en_US',
     siteName: 'Theeran P. Portfolio'

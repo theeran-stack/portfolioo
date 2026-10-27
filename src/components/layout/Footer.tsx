@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { ArrowUp, Mail, Heart } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, LeetcodeIcon } from '../ui/SocialIcons';
 import { personalProfile } from '@/data/profile';
@@ -22,12 +23,12 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-[var(--border-subtle)]">
           {/* Brand & Closing statement */}
           <div className="text-center md:text-left">
-            <a
-              href="#home"
+            <Link
+              href="/#home"
               className="text-lg font-bold font-heading text-[var(--text-primary)] tracking-wider"
             >
               THEERAN<span className="text-[var(--accent-primary)]">.</span>
-            </a>
+            </Link>
             <p className="mt-1 text-xs text-[var(--text-secondary)]">
               Computer Science Engineer • Creative Technologist • ProtoSem Fellow
             </p>
@@ -35,27 +36,27 @@ export default function Footer() {
 
           {/* Quick Nav Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-[var(--text-secondary)]">
-            <a href="#about" className="hover:text-[var(--accent-primary)] transition-colors">
+            <Link href="/#about" className="hover:text-[var(--accent-primary)] transition-colors">
               About
-            </a>
-            <a href="#skills" className="hover:text-[var(--accent-primary)] transition-colors">
+            </Link>
+            <Link href="/#skills" className="hover:text-[var(--accent-primary)] transition-colors">
               Skills
-            </a>
-            <a href="#projects" className="hover:text-[var(--accent-primary)] transition-colors">
+            </Link>
+            <Link href="/#projects" className="hover:text-[var(--accent-primary)] transition-colors">
               Projects
-            </a>
-            <a href="#experience" className="hover:text-[var(--accent-primary)] transition-colors">
+            </Link>
+            <Link href="/#experience" className="hover:text-[var(--accent-primary)] transition-colors">
               Experience
-            </a>
-            <a href="#journal" className="hover:text-[var(--accent-primary)] transition-colors">
+            </Link>
+            <Link href="/forge-journal" className="hover:text-[var(--accent-primary)] transition-colors">
               Forge Journal
-            </a>
-            <a href="#coding" className="hover:text-[var(--accent-primary)] transition-colors">
+            </Link>
+            <Link href="/#coding" className="hover:text-[var(--accent-primary)] transition-colors">
               Coding
-            </a>
-            <a href="#contact" className="hover:text-[var(--accent-primary)] transition-colors">
+            </Link>
+            <Link href="/#contact" className="hover:text-[var(--accent-primary)] transition-colors">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Back to top */}

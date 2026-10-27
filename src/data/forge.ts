@@ -1,12 +1,12 @@
-import { ForgeWeekEpisode } from '@/types/portfolio';
+import { ForgeWeekRecord } from '@/types/portfolio';
 
 export const forgeProgramInfo = {
-  programName: 'Forge ProtoSem Fellowship (Season One: Forge Journey)',
+  programName: 'Forge ProtoSem Fellowship',
   organization: 'Forge Innovation & Ventures / Kumaraguru College of Technology',
   subtitle: 'Industrial Microcontroller Prototyping, Real-Time Embedded Systems & IoT Engineering',
-  duration: '20 Weeks (Current Cohort)',
+  duration: '6 Weeks Documented (Active Sprint)',
   overview:
-    'An intensive technical prototyping fellowship focused on turning engineering concepts into production-grade hardware and software solutions. The curriculum encompasses industrial ideation, FreeRTOS real-time kernel programming, high-speed sensor interfacing, hardware SPI/I2C communication, and cloud IoT telemetry integration.',
+    'An intensive technical prototyping fellowship focused on transforming engineering concepts into production-grade hardware and software solutions. The curriculum encompasses industrial ideation, FreeRTOS real-time kernel programming, high-speed sensor interfacing, hardware SPI/I2C communication, and cloud IoT telemetry integration.',
   learningObjectives: [
     'Master real-time preemptive embedded kernels (FreeRTOS) on dual-core ESP32 microcontrollers',
     'Design hardware SPI and I2C peripheral interfacing pipelines with robust error recovery',
@@ -14,22 +14,24 @@ export const forgeProgramInfo = {
     'Apply machine learning models (AS7265x multi-spectral sensing) to physical automation challenges',
     'Document engineering challenges, system architectures, and hardware debugging systematically'
   ],
-  totalWeeks: 20,
-  completedWeeks: 8,
+  totalWeeks: 6,
+  completedWeeks: 5,
+  inProgressWeeks: 1,
   activeCohortYear: '2025 — 2026'
 };
 
-export const forgeEpisodes: ForgeWeekEpisode[] = [
+export const forgeWeeks: ForgeWeekRecord[] = [
   {
     weekNumber: 1,
-    id: 'forge-w1',
-    title: 'Episode 01 — Innovation Frameworks & Design Thinking',
+    id: 'week-1',
+    slug: 'week-1',
+    title: 'Week 01 — Innovation Frameworks & Design Thinking',
     subtitle: 'Problem Discovery, Customer Empathy Mapping, and Hardware Opportunity Framing',
     dateRange: 'Week 1',
     category: 'Innovation & Strategy',
     status: 'Completed',
     summary:
-      'Initiated Season One of the Forge ProtoSem fellowship. Focused on systematic problem discovery, identifying friction points in industrial automation and consumer tech, and applying design thinking frameworks to prioritize feasibility and impact.',
+      'Initiated the Forge ProtoSem fellowship. Focused on systematic problem discovery, identifying friction points in industrial automation and consumer tech, and applying design thinking frameworks to prioritize feasibility and impact.',
     objectives: [
       'Deconstruct complex problems into validated customer pain points',
       'Conduct stakeholder interview simulations and market landscape analysis',
@@ -101,8 +103,9 @@ export const forgeEpisodes: ForgeWeekEpisode[] = [
   },
   {
     weekNumber: 2,
-    id: 'forge-w2',
-    title: 'Episode 02 — Embedded Architectures & App Prototyping',
+    id: 'week-2',
+    slug: 'week-2',
+    title: 'Week 02 — Embedded Architectures & App Prototyping',
     subtitle: 'Microcontroller Fundamentals, Mobile Companion Apps, and Data Pipelines',
     dateRange: 'Week 2',
     category: 'Embedded Systems',
@@ -180,8 +183,9 @@ export const forgeEpisodes: ForgeWeekEpisode[] = [
   },
   {
     weekNumber: 3,
-    id: 'forge-w3',
-    title: 'Episode 03 — Sensor Interfacing & Mechanical Enclosures',
+    id: 'week-3',
+    slug: 'week-3',
+    title: 'Week 03 — Sensor Interfacing & Mechanical Enclosures',
     subtitle: 'Electronics Circuit Design, Analog-to-Digital Conversion, and 3D CAD Modeling',
     dateRange: 'Week 3',
     category: 'Hardware & CAD',
@@ -258,11 +262,12 @@ export const forgeEpisodes: ForgeWeekEpisode[] = [
     ]
   },
   {
-    weekNumber: 7,
-    id: 'forge-w7',
-    title: 'Episode 07 — ESP32 FreeRTOS Kernel & SPI MicroSD Logger',
+    weekNumber: 4,
+    id: 'week-4',
+    slug: 'week-4',
+    title: 'Week 04 — Firmware Development & Testing',
     subtitle: 'Preemptive Multi-Task Scheduling, Hardware SPI SD Datalogger, and Watchdog Timer Protection',
-    dateRange: 'Week 7',
+    dateRange: 'Week 4',
     category: 'Real-Time Embedded Systems',
     status: 'Completed',
     summary:
@@ -339,15 +344,16 @@ export const forgeEpisodes: ForgeWeekEpisode[] = [
     repoLink: 'https://github.com/theeran-stack/HomePulse'
   },
   {
-    weekNumber: 8,
-    id: 'forge-w8',
-    title: 'Episode 08 — IoT Wireless Telemetry & MQTT Cloud Dashboard',
+    weekNumber: 5,
+    id: 'week-5',
+    slug: 'week-5',
+    title: 'Week 05 — System Integration & Field Trials',
     subtitle: 'ESP32 Wi-Fi Station Mode, MQTT Telemetry Broker, HTTP REST Endpoints, and Live Web Visualizer',
-    dateRange: 'Week 8',
+    dateRange: 'Week 5',
     category: 'IoT & Cloud Systems',
     status: 'Completed',
     summary:
-      'Expanded the embedded telemetry node into a wireless IoT powerhouse. Configured ESP32 Wi-Fi networking, established an MQTT publish/subscribe telemetry broker pipeline streaming JSON payloads, and developed a real-time browser dashboard for live data visualization.',
+      'Expanded the embedded telemetry node into a wireless IoT system. Configured ESP32 Wi-Fi networking, established an MQTT publish/subscribe telemetry broker pipeline streaming JSON payloads, and developed a real-time browser dashboard for live data visualization.',
     objectives: [
       'Configure ESP32 Wi-Fi Station and Access Point modes with automated reconnect states',
       'Implement MQTT pub/sub messaging protocols with structured JSON payloads',
@@ -365,8 +371,7 @@ export const forgeEpisodes: ForgeWeekEpisode[] = [
     challengesFixesList: [
       {
         challenge: 'Wi-Fi dropouts freezing real-time sensor sampling during network reconnects.',
-        fix:
-          'Isolated network management into an independent background FreeRTOS task running on Core 0, leaving Core 1 exclusively dedicated to deterministic sensor sampling and SD logging.'
+        fix: 'Isolated network management into an independent background FreeRTOS task running on Core 0, leaving Core 1 exclusively dedicated to deterministic sensor sampling and SD logging.'
       }
     ],
     skillsGained: [
@@ -383,7 +388,7 @@ export const forgeEpisodes: ForgeWeekEpisode[] = [
       'Decoupled Edge-to-Cloud Architectural Patterns'
     ],
     keyLearnings:
-      'Pinning critical hardware sampling tasks to Core 1 and network communications to Core 0 guarantees deterministic real-time responsiveness even during catastrophic network outages.',
+      'Pinning critical hardware sampling tasks to Core 1 and network communications to Core 0 guarantees deterministic real-time responsiveness even during network outages.',
     reflection:
       'Connecting physical hardware sensors through FreeRTOS, local SD storage, wireless MQTT, and cloud dashboards created an end-to-end industrial-grade pipeline that feels truly production-ready.',
     highlights: [
@@ -398,32 +403,64 @@ export const forgeEpisodes: ForgeWeekEpisode[] = [
     ],
     repoLink: 'https://github.com/theeran-stack/HomePulse'
   },
-  // Upcoming Milestones (Weeks 9-20)
-  ...Array.from({ length: 12 }, (_, i) => {
-    const weekNum = i + 9;
-    return {
-      weekNumber: weekNum,
-      id: `forge-w${weekNum}`,
-      title: `Episode ${weekNum < 10 ? '0' + weekNum : weekNum} — Advanced Milestone Integration`,
-      subtitle: `ProtoSem Week ${weekNum} project sprint, hardware refinement, and industrial testing.`,
-      dateRange: `Week ${weekNum}`,
-      category: 'Prototyping Sprint',
-      status: 'In Progress' as const,
-      summary: `Week ${weekNum} is actively underway. Milestones involve scaling hardware durability, optimizing real-time FreeRTOS throughput, conducting field sensor calibration, and preparing prototype demonstrations.`,
-      objectives: [
-        `Execute Week ${weekNum} technical deliverables and benchmark tests`,
-        'Perform stress testing on embedded firmware under extended operational cycles',
-        'Document hardware iterations, power profiling, and telemetry accuracy'
-      ],
-      activitiesCompleted: [
-        `Active firmware iteration and hardware test bench experiments for Week ${weekNum}`
-      ],
-      skillsGained: ['Industrial Hardware Prototyping', 'System Testing', 'Iterative Design'],
-      keyLearnings: 'Continuous empirical testing in real environments reveals edge cases that laboratory simulations miss.',
-      reflection: `Building iteratively week by week transforms complex engineering challenges into achievable milestones.`,
-      highlights: [`Week ${weekNum} documentation and prototype validation in active progress.`],
-      tags: [`Week ${weekNum}`, 'ProtoSem', 'In Progress', 'Hardware Prototyping'],
-      teamCredits: [{ role: 'Student Fellow', name: 'Theeran P.' }]
-    };
-  })
+  {
+    weekNumber: 6,
+    id: 'week-6',
+    slug: 'week-6',
+    title: 'Week 06 — Documentation & Visual Storytelling',
+    subtitle: 'Technical Case Studies, Cinematographic Prototype Demonstrations & Open-Source Release',
+    dateRange: 'Week 6',
+    category: 'Documentation & Media',
+    status: 'In Progress',
+    summary:
+      'Synthesizing the prototyping sprint into comprehensive engineering case studies, multi-angle video demonstration reels, and public documentation. Combining video production expertise with technical documentation to communicate hardware architectures compellingly.',
+    objectives: [
+      'Produce broadcast-quality video demonstrations of the ESP32 FreeRTOS telemetry node',
+      'Draft in-depth technical documentation covering pinouts, circuit schematics, and firmware architecture',
+      'Structure open-source code repositories with clear build and deployment instructions',
+      'Prepare live demonstration pitches for Forge incubation faculty and stakeholders'
+    ],
+    activitiesCompleted: [
+      'Captured multi-angle video footage of live sensor telemetry and OLED refresh rates',
+      'Authored comprehensive README and architecture schematics for the firmware repository',
+      'Created standardized technical presentation decks for ProtoSem cohort reviews'
+    ],
+    challengesFaced:
+      'Translating dense microcontroller code into clear, visually captivating video stories without losing technical depth.',
+    challengesFixesList: [
+      {
+        challenge: 'Balancing technical accuracy with dynamic, engaging pacing in video demos.',
+        fix: 'Structured the video demonstrations around problem-solution chapters with on-screen circuit overlays and terminal telemetry readouts.'
+      }
+    ],
+    skillsGained: [
+      'Technical Documentation',
+      'Cinematography & Lighting',
+      'Video Production & Pacing',
+      'System Architecture Diagrams',
+      'Stakeholder Communication'
+    ],
+    conceptsLearned: [
+      'Visual Technical Storytelling',
+      'Open-Source Documentation Standards',
+      'Cross-Disciplinary Product Demos'
+    ],
+    keyLearnings:
+      'An engineering breakthrough only creates impact when it can be understood, reproduced, and appreciated by stakeholders and collaborators.',
+    reflection:
+      'Week 6 unites my two core passions: deep technical embedded systems and cinematic visual storytelling. Delivering work that is both functionally rigorous and beautifully documented is the hallmark of true craftsmanship.',
+    highlights: [
+      'Produced multi-angle demonstration video of the ESP32 telemetry node',
+      'Completed full open-source documentation and hardware pinout guides',
+      'Final milestone sprint actively in progress for cohort demonstration'
+    ],
+    tags: ['Documentation', 'Visual Storytelling', 'Cinematography', 'Case Studies', 'In Progress'],
+    teamCredits: [
+      { role: 'Lead Engineer & Media Creator', name: 'Theeran P.' },
+      { role: 'Faculty Reviewer', name: 'Forge ProtoSem Panel' }
+    ]
+  }
 ];
+
+// Alias for backward compatibility if needed
+export const forgeEpisodes = forgeWeeks;

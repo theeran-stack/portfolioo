@@ -121,6 +121,7 @@ export interface ForgeTeamCredit {
 export interface ForgeWeekEpisode {
   weekNumber: number;
   id: string;
+  slug?: string;
   title: string;
   subtitle: string;
   dateRange: string;
@@ -153,3 +154,6 @@ export interface CodingProfile {
   topics: { name: string; count: number }[];
   badges: string[];
 }
+
+export type ForgeWeekRecord = ForgeWeekEpisode;
+

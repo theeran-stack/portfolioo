@@ -22,7 +22,7 @@ export default function EpisodeCard({ episode, onSelect }: EpisodeCardProps) {
         {/* Top Badges */}
         <div className="flex items-center justify-between mb-4">
           <span className="badge-pill font-mono text-xs font-bold">
-            EPISODE {episode.weekNumber < 10 ? `0${episode.weekNumber}` : episode.weekNumber}
+            WEEK {episode.weekNumber < 10 ? `0${episode.weekNumber}` : episode.weekNumber}
           </span>
 
           <span
