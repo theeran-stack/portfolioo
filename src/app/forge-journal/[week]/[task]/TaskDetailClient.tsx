@@ -514,18 +514,18 @@ export default function TaskDetailClient({
                   onClick={() =>
                     setSelectedImage({ url: img.url, caption: img.caption })
                   }
-                  className="group cursor-pointer rounded-xl overflow-hidden bg-[var(--bg-elevated)] border border-[var(--border-subtle)] hover:border-[var(--border-hover)] transition-all shadow-md"
+                  className="group cursor-pointer rounded-xl overflow-hidden bg-[var(--bg-elevated)] border border-[var(--border-subtle)] hover:border-[var(--border-hover)] transition-all shadow-md flex flex-col justify-between"
                 >
-                  <div className="relative w-full h-52 sm:h-60 overflow-hidden">
+                  <div className="relative w-full h-64 sm:h-72 overflow-hidden bg-black/60 flex items-center justify-center">
                     <Image
                       src={img.url}
                       alt={img.caption}
                       fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="object-contain transition-transform duration-300 group-hover:scale-105 p-2"
                       sizes="(max-width: 768px) 100vw, 450px"
                     />
                   </div>
-                  <p className="p-3 text-xs text-[var(--text-secondary)] font-mono leading-relaxed">
+                  <p className="p-3 text-xs text-[var(--text-secondary)] font-mono leading-relaxed border-t border-[var(--border-subtle)] bg-[var(--bg-elevated)]">
                     {img.caption}
                   </p>
                 </div>
@@ -536,14 +536,33 @@ export default function TaskDetailClient({
           {/* Video Demonstration Player if available */}
           {task.evidence.videoUrl && (
             <div className="space-y-3 pt-2">
-              <h4 className="text-xs font-mono uppercase text-[var(--accent-primary)] font-bold flex items-center gap-2">
-                <Play className="w-3.5 h-3.5" />
-                <span>Live Demonstration Reel:</span>
-              </h4>
-              <div className="rounded-xl overflow-hidden border border-[var(--border-subtle)] bg-black">
+              <div className="flex items-center justify-between">
+                <h4 className="text-xs font-mono uppercase text-[var(--accent-primary)] font-bold flex items-center gap-2">
+                  <Play className="w-3.5 h-3.5" />
+                  <span>Live Demonstration Reel:</span>
+                </h4>
+                {task.evidence.videoOrientation === 'portrait' && (
+                  <span className="badge-pill font-mono text-[10px] text-amber-400 border border-amber-500/20">
+                    VERTICAL / PORTRAIT RATIO (UNCROPPED)
+                  </span>
+                )}
+              </div>
+
+              <div
+                className={`rounded-xl overflow-hidden border border-[var(--border-subtle)] bg-black flex items-center justify-center ${
+                  task.evidence.videoOrientation === 'portrait'
+                    ? 'max-w-md mx-auto p-2 sm:p-4'
+                    : 'w-full p-2'
+                }`}
+              >
                 <video
                   controls
-                  className="w-full max-h-[420px] object-cover"
+                  playsInline
+                  className={`rounded-lg object-contain bg-black ${
+                    task.evidence.videoOrientation === 'portrait'
+                      ? 'max-h-[640px] w-auto max-w-full'
+                      : 'w-full max-h-[520px]'
+                  }`}
                   preload="metadata"
                 >
                   <source src={task.evidence.videoUrl} type="video/mp4" />
@@ -551,7 +570,7 @@ export default function TaskDetailClient({
                 </video>
               </div>
               {task.evidence.videoCaption && (
-                <p className="text-xs text-[var(--text-muted)] font-mono">
+                <p className={`text-xs text-[var(--text-muted)] font-mono ${task.evidence.videoOrientation === 'portrait' ? 'text-center' : ''}`}>
                   {task.evidence.videoCaption}
                 </p>
               )}

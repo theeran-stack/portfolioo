@@ -261,6 +261,7 @@ String getHtmlPage() {
       ],
       videoUrl: '/img/week-7/task-1/task-1.mp4',
       videoCaption: 'Task 1 Live Demonstration: ESP32 Web Server & HTML LED Control',
+      videoOrientation: 'landscape',
       terminalLogs: `[BOOT] ESP32 Chip Revision: 1
 Connecting to Wi-Fi SSID: Home_Network_2.4G
 .....
@@ -528,6 +529,7 @@ void MQTT_connect() {
       ],
       videoUrl: '/img/week-7/task-2/task-2.mp4',
       videoCaption: 'Task 2 Live Demonstration: Adafruit IO Dashboard & MQTT Remote Control',
+      videoOrientation: 'landscape',
       terminalLogs: `Connecting to Wi-Fi: Home_Network_2.4G
 ..
 Wi-Fi Connected!
@@ -708,6 +710,7 @@ Connecting to Adafruit IO MQTT Broker... MQTT Broker Connected!
       ],
       videoUrl: '/img/week-7/task-3/task-3.mp4',
       videoCaption: 'Task 3 Live Demonstration: IFTTT + Adafruit IO Event-Driven Automation',
+      videoOrientation: 'landscape',
       terminalLogs: `[SYSTEM] Time: 18:00:02 IST
 [IFTTT] Applet #1049281 Triggered: Date & Time Event
 [ADAFRUIT IO] Received API Request: Write 'ON' to 'theeran/feeds/led-control'
@@ -994,7 +997,8 @@ void loop() {
         }
       ],
       videoUrl: '/img/week-7/task-4/task-4.mp4',
-      videoCaption: 'Task 4 Live Demonstration: Firebase IoT Monitoring Dashboard & Control',
+      videoCaption: 'Task 4 Live Demonstration: Firebase IoT Monitoring Dashboard & Control (Vertical View)',
+      videoOrientation: 'portrait',
       terminalLogs: `Wi-Fi Connected! IP: 192.168.1.108
 Firebase Realtime Stream Listener Active on /controls
 [TELEMETRY] Temp: 28.4 C, Humidity: 64.0 %, Light: 72 % (Raw: 2950)
@@ -1278,7 +1282,8 @@ void loop() {
         }
       ],
       videoUrl: '/img/week-7/task-5/task-5.mp4',
-      videoCaption: 'Task 5 Live Demonstration: Firebase Logging, Automation & Data Export',
+      videoCaption: 'Task 5 Live Demonstration: Firebase Logging, Automation & Data Export (Vertical View)',
+      videoOrientation: 'portrait',
       terminalLogs: `NTP Time Synchronized: Tue Oct 27 18:04:12 IST 2026
 [AUTO EDGE] Dark detected (22% < 30%) -> Auto Bulb ON
 [HISTORICAL LOG] Pushed record at epoch 1761569052 -> ID: -O7xKb...

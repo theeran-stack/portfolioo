@@ -147,13 +147,13 @@ export default function WeekDetailClient({ week }: WeekDetailClientProps) {
                     {task.thumbnailUrl && (
                       <Link
                         href={`/forge-journal/week-${week.weekNumber}/${task.taskId}`}
-                        className="block relative w-full h-36 rounded-xl overflow-hidden mb-4 bg-[var(--bg-elevated)] border border-[var(--border-subtle)]"
+                        className="block relative w-full h-44 rounded-xl overflow-hidden mb-4 bg-black/60 border border-[var(--border-subtle)] flex items-center justify-center"
                       >
                         <Image
                           src={task.thumbnailUrl}
                           alt={task.title}
                           fill
-                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                          className="object-contain transition-transform duration-500 group-hover:scale-105 p-1"
                           sizes="(max-width: 768px) 100vw, 350px"
                         />
                       </Link>
@@ -350,18 +350,18 @@ export default function WeekDetailClient({ week }: WeekDetailClientProps) {
                   onClick={() =>
                     setSelectedImage({ url: img.url, caption: img.caption })
                   }
-                  className="group cursor-pointer rounded-xl overflow-hidden bg-[var(--bg-elevated)] border border-[var(--border-subtle)] hover:border-[var(--border-hover)] transition-all shadow-md"
+                  className="group cursor-pointer rounded-xl overflow-hidden bg-[var(--bg-elevated)] border border-[var(--border-subtle)] hover:border-[var(--border-hover)] transition-all shadow-md flex flex-col justify-between"
                 >
-                  <div className="relative w-full h-48 sm:h-56 overflow-hidden">
+                  <div className="relative w-full h-52 sm:h-64 overflow-hidden bg-black/60 flex items-center justify-center">
                     <Image
                       src={img.url}
                       alt={img.caption}
                       fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="object-contain transition-transform duration-300 group-hover:scale-105 p-1.5"
                       sizes="(max-width: 768px) 100vw, 350px"
                     />
                   </div>
-                  <p className="p-3 text-xs text-[var(--text-secondary)] font-mono leading-relaxed line-clamp-2">
+                  <p className="p-3 text-xs text-[var(--text-secondary)] font-mono leading-relaxed line-clamp-2 border-t border-[var(--border-subtle)] bg-[var(--bg-elevated)]">
                     {img.caption}
                   </p>
                 </div>

@@ -192,6 +192,7 @@ export interface ForgeActivityTask {
     images?: { url: string; caption: string; type: 'image' | 'video' }[];
     videoUrl?: string;
     videoCaption?: string;
+    videoOrientation?: 'landscape' | 'portrait';
     terminalLogs?: string;
     placeholderNotice?: string;
   };
