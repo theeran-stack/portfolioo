@@ -17,6 +17,7 @@ import {
 import ParticleCanvas from './ParticleCanvas';
 import { GithubIcon, LinkedinIcon, LeetcodeIcon } from '../ui/SocialIcons';
 import { personalProfile } from '@/data/profile';
+import { forgeWeeks } from '@/data/forge';
 
 export default function Hero() {
   return (
@@ -81,7 +82,7 @@ export default function Hero() {
 
               <Link href="/forge-journal" className="btn-secondary">
                 <Compass className="w-4 h-4 text-[var(--accent-primary)]" />
-                <span>Forge Journal (6 Weeks)</span>
+                <span>Forge Journal ({forgeWeeks.length} Weeks)</span>
               </Link>
             </div>
 
@@ -170,7 +171,7 @@ export default function Hero() {
 
                 <div className="p-4 rounded-xl bg-[var(--bg-elevated)] border border-[var(--border-subtle)] text-center">
                   <p className="text-2xl sm:text-3xl font-bold font-heading text-[var(--text-primary)]">
-                    6
+                    {forgeWeeks.length}
                   </p>
                   <p className="text-[11px] font-mono text-[var(--text-muted)] mt-1 uppercase">
                     Forge Weeks

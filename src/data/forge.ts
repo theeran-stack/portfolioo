@@ -4,7 +4,7 @@ export const forgeProgramInfo = {
   programName: 'Forge ProtoSem Fellowship',
   organization: 'Forge Innovation & Ventures / Kumaraguru College of Technology',
   subtitle: 'Industrial Microcontroller Prototyping, Real-Time Embedded Systems & IoT Engineering',
-  duration: '6 Weeks Documented (Active Sprint)',
+  duration: '20-Week Fellowship Curriculum (Active Cohort)',
   overview:
     'An intensive technical prototyping fellowship focused on transforming engineering concepts into production-grade hardware and software solutions. The curriculum encompasses industrial ideation, FreeRTOS real-time kernel programming, high-speed sensor interfacing, hardware SPI/I2C communication, and cloud IoT telemetry integration.',
   learningObjectives: [
@@ -14,9 +14,10 @@ export const forgeProgramInfo = {
     'Apply machine learning models (AS7265x multi-spectral sensing) to physical automation challenges',
     'Document engineering challenges, system architectures, and hardware debugging systematically'
   ],
-  totalWeeks: 6,
+  totalWeeks: 20,
   completedWeeks: 5,
   inProgressWeeks: 1,
+  upcomingWeeks: 14,
   activeCohortYear: '2025 — 2026'
 };
 
@@ -459,6 +460,440 @@ export const forgeWeeks: ForgeWeekRecord[] = [
       { role: 'Lead Engineer & Media Creator', name: 'Theeran P.' },
       { role: 'Faculty Reviewer', name: 'Forge ProtoSem Panel' }
     ]
+  },
+  {
+    weekNumber: 7,
+    id: 'week-7',
+    slug: 'week-7',
+    title: 'Week 07 — Hardware In-The-Loop Testing & Benchmarking [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — Real-Time Signal Profiling & Stress Testing [Placeholder]',
+    dateRange: 'Week 7',
+    category: 'Hardware Testing',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Scheduled curriculum sprint for hardware-in-the-loop validation, measuring clock drift, power consumption, and signal stability under stress. Technical logs and firmware traces will be published upon milestone execution.',
+    objectives: [
+      '[Placeholder] Implement automated test scripts for real-time sensor stimulus and capture',
+      '[Placeholder] Characterize current draw profiles across ESP32 active and radio transmit states',
+      '[Placeholder] Validate communication bus error handling under injected line noise'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Hardware bench setup and test methodology definition for Week 07'
+    ],
+    skillsGained: ['Hardware In-The-Loop', 'Signal Profiling', 'Power Profiling'],
+    keyLearnings:
+      '[Placeholder] Technical observations will be documented upon sprint completion.',
+    reflection:
+      '[Placeholder] Engineering reflection will be added following cohort review.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 07 sprint milestone'],
+    galleryImages: [
+      {
+        url: '/img/IMG20260728162105.jpg.jpeg',
+        caption: 'Cohort Prototyping & Benchmarking Lab Workspace',
+        type: 'image'
+      }
+    ],
+    tags: ['Week 07', 'ProtoSem', 'Hardware Testing', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+  },
+  {
+    weekNumber: 8,
+    id: 'week-8',
+    slug: 'week-8',
+    title: 'Week 08 — Multi-Spectral Sensing & Data Acquisition [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — Optical Sensor Interfacing & Calibration [Placeholder]',
+    dateRange: 'Week 8',
+    category: 'Sensor Integration',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Scheduled curriculum sprint for optical sensor interfacing and spectral data collection pipelines. Algorithms and calibration data will be documented upon milestone execution.',
+    objectives: [
+      '[Placeholder] Configure 18-channel optical sensor arrays over I2C bus',
+      '[Placeholder] Record baseline spectral response curves for reference materials',
+      '[Placeholder] Implement noise cancellation and baseline drift compensation in firmware'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Optical sensor bench preparation and calibration model planning'
+    ],
+    skillsGained: ['Spectroscopy', 'I2C Protocols', 'Sensor Calibration'],
+    keyLearnings:
+      '[Placeholder] Sensor data curves and calibration matrices will be recorded upon milestone execution.',
+    reflection:
+      '[Placeholder] Engineering reflection will be added following cohort review.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 08 sprint milestone'],
+    galleryImages: [
+      {
+        url: '/img/week-1/IMG_20260810_105037.jpg.jpeg',
+        caption: 'Laboratory Optical Prototyping & Sensor Calibration Bench',
+        type: 'image'
+      }
+    ],
+    tags: ['Week 08', 'ProtoSem', 'Optical Sensing', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+  },
+  {
+    weekNumber: 9,
+    id: 'week-9',
+    slug: 'week-9',
+    title: 'Week 09 — Industrial Communications & Transceiver Design [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — Differential Signaling & Noise Immunity [Placeholder]',
+    dateRange: 'Week 9',
+    category: 'Industrial Protocols',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Scheduled curriculum sprint covering long-range differential signaling (RS-485 / CAN), noise immunity in high-EMI environments, and hardware transceiver stages.',
+    objectives: [
+      '[Placeholder] Evaluate RS-485 differential bus transceivers with termination matching',
+      '[Placeholder] Measure transmission packet drop rates over 50-meter cable runs',
+      '[Placeholder] Implement hardware galvanic isolation stages for high-voltage industrial rails'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Industrial communication protocol research and bench schematic planning'
+    ],
+    skillsGained: ['Differential Signaling', 'RS-485', 'Galvanic Isolation'],
+    keyLearnings:
+      '[Placeholder] Industrial communication performance metrics will be documented upon sprint completion.',
+    reflection:
+      '[Placeholder] Engineering reflection will be added following cohort review.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 09 sprint milestone'],
+    galleryImages: [
+      {
+        url: '/img/week-1/IMG_20260810_105134.jpg.jpeg',
+        caption: 'Hardware Communication Bench Review & Mentor Consultation',
+        type: 'image'
+      }
+    ],
+    tags: ['Week 09', 'ProtoSem', 'RS-485', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+  },
+  {
+    weekNumber: 10,
+    id: 'week-10',
+    slug: 'week-10',
+    title: 'Week 10 — Edge ML Inference & TinyML Models [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — Quantized On-Device Intelligence [Placeholder]',
+    dateRange: 'Week 10',
+    category: 'Embedded ML',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Scheduled curriculum sprint implementing lightweight quantized neural network models directly on microcontrollers for real-time anomaly detection.',
+    objectives: [
+      '[Placeholder] Train compact classification models and quantize weights to int8',
+      '[Placeholder] Deploy TinyML runtime onto ESP32 SRAM constraints',
+      '[Placeholder] Benchmark inference latency and memory footprints'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Model architecture planning and training dataset preparation'
+    ],
+    skillsGained: ['TinyML', 'Model Quantization', 'Embedded Inference'],
+    keyLearnings:
+      '[Placeholder] On-device inference benchmarks will be documented upon sprint completion.',
+    reflection:
+      '[Placeholder] Engineering reflection will be added following cohort review.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 10 sprint milestone'],
+    tags: ['Week 10', 'ProtoSem', 'TinyML', 'Edge AI', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+  },
+  {
+    weekNumber: 11,
+    id: 'week-11',
+    slug: 'week-11',
+    title: 'Week 11 — Power Optimization & Sleep State Architectures [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — Deep Sleep & Battery Management [Placeholder]',
+    dateRange: 'Week 11',
+    category: 'Power Engineering',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Scheduled curriculum sprint analyzing sub-milliamp quiescent power consumption, ULP coprocessor wake triggers, and LiFePO4 battery charge circuits.',
+    objectives: [
+      '[Placeholder] Configure ESP32 deep sleep state with RTC timer and external wake interrupts',
+      '[Placeholder] Measure sleep current consumption with microamp accuracy',
+      '[Placeholder] Design solar-assisted charging power supply topology'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Low-power firmware routines and power budget calculations'
+    ],
+    skillsGained: ['Deep Sleep Optimization', 'Battery Management', 'Current Profiling'],
+    keyLearnings:
+      '[Placeholder] Current profiling curves will be documented upon sprint completion.',
+    reflection:
+      '[Placeholder] Engineering reflection will be added following cohort review.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 11 sprint milestone'],
+    tags: ['Week 11', 'ProtoSem', 'Low Power', 'Battery', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+  },
+  {
+    weekNumber: 12,
+    id: 'week-12',
+    slug: 'week-12',
+    title: 'Week 12 — Mid-Program Prototype Review & Jury Evaluation [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — Formal Milestone Evaluation & Demo [Placeholder]',
+    dateRange: 'Week 12',
+    category: 'Milestone Review',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Scheduled mid-fellowship formal jury review, demonstrating working integrated hardware prototypes to Forge incubation faculty and technical directors.',
+    objectives: [
+      '[Placeholder] Present working hardware prototypes in live operational conditions',
+      '[Placeholder] Deliver comprehensive architecture documentation and test metrics',
+      '[Placeholder] Incorporate jury feedback into the phase-two development sprint roadmap'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Demonstration preparation and milestone presentation synthesis'
+    ],
+    skillsGained: ['Technical Presentation', 'Stakeholder Defense', 'Milestone Review'],
+    keyLearnings:
+      '[Placeholder] Mid-term review insights will be documented following jury demonstration.',
+    reflection:
+      '[Placeholder] Engineering reflection will be added following cohort review.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 12 sprint milestone'],
+    tags: ['Week 12', 'ProtoSem', 'Jury Review', 'Milestone', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+  },
+  {
+    weekNumber: 13,
+    id: 'week-13',
+    slug: 'week-13',
+    title: 'Week 13 — Custom PCB Schematic Design & EDA Layout [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — Circuit Schematic & Component Layout [Placeholder]',
+    dateRange: 'Week 13',
+    category: 'PCB Design',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Scheduled curriculum sprint transitioning verified breadboard circuits into professional schematic capture, defining component footprints, and establishing schematic hierarchies.',
+    objectives: [
+      '[Placeholder] Translate verified breadboard circuits into KiCad / EasyEDA schematics',
+      '[Placeholder] Specify verified footprints and surface-mount component packages',
+      '[Placeholder] Complete electrical rule checks (ERC) and generate bills-of-materials'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Schematic capture preparation and component library drafting'
+    ],
+    skillsGained: ['KiCad EDA', 'Schematic Capture', 'ERC Verification', 'BOM Management'],
+    keyLearnings:
+      '[Placeholder] Schematic diagrams will be documented upon milestone execution.',
+    reflection:
+      '[Placeholder] Engineering reflection will be added following cohort review.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 13 sprint milestone'],
+    galleryImages: [
+      {
+        url: '/img/week-3/Mecahnical/Home view Decay.png',
+        caption: 'CAD Component Clearances & Mechanical Enclosure Interface',
+        type: 'image'
+      }
+    ],
+    tags: ['Week 13', 'ProtoSem', 'PCB Design', 'KiCad', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+  },
+  {
+    weekNumber: 14,
+    id: 'week-14',
+    slug: 'week-14',
+    title: 'Week 14 — Multi-Layer PCB Routing & Gerber Export [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — Trace Routing, Ground Planes & Fabrication Files [Placeholder]',
+    dateRange: 'Week 14',
+    category: 'PCB Fabrication',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Scheduled curriculum sprint for multi-layer trace routing, copper pour thermal reliefs, design rule check (DRC) verification, and fabrication Gerber package release.',
+    objectives: [
+      '[Placeholder] Route high-speed SPI and analog sensor traces with matched lengths',
+      '[Placeholder] Establish uninterrupted continuous ground return planes for EMI mitigation',
+      '[Placeholder] Perform fabrication DRC checks and generate standardized Gerber RS-274X files'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Routing constraint definitions and fabrication vendor specifications review'
+    ],
+    skillsGained: ['PCB Routing', 'Design Rule Check (DRC)', 'Gerber RS-274X', 'High-Speed Traces'],
+    keyLearnings:
+      '[Placeholder] PCB layout renders will be documented upon milestone execution.',
+    reflection:
+      '[Placeholder] Engineering reflection will be added following cohort review.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 14 sprint milestone'],
+    tags: ['Week 14', 'ProtoSem', 'PCB Routing', 'Gerber', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+  },
+  {
+    weekNumber: 15,
+    id: 'week-15',
+    slug: 'week-15',
+    title: 'Week 15 — Firmware Over-The-Air (FOTA) Updates [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — Secure Boot & Remote Wireless Binary Rollouts [Placeholder]',
+    dateRange: 'Week 15',
+    category: 'Firmware Systems',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Scheduled curriculum sprint implementing secure wireless firmware updates with dual-partition flash rollback protection and cryptographic signature verification.',
+    objectives: [
+      '[Placeholder] Configure dual OTA partition tables on ESP32 4MB flash layout',
+      '[Placeholder] Implement HTTPS binary download and checksum verification routines',
+      '[Placeholder] Test automatic rollback to factory firmware on simulated boot faults'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Partition table schemas and OTA state machine planning'
+    ],
+    skillsGained: ['FOTA Updates', 'ESP32 Partition Tables', 'Rollback Protection', 'Flash Security'],
+    keyLearnings:
+      '[Placeholder] FOTA test logs will be documented upon milestone execution.',
+    reflection:
+      '[Placeholder] Engineering reflection will be added following cohort review.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 15 sprint milestone'],
+    tags: ['Week 15', 'ProtoSem', 'FOTA', 'Firmware', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+  },
+  {
+    weekNumber: 16,
+    id: 'week-16',
+    slug: 'week-16',
+    title: 'Week 16 — Cloud Gateway & Time-Series Ingestion [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — High-Throughput Telemetry Ingestion [Placeholder]',
+    dateRange: 'Week 16',
+    category: 'Cloud Architecture',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Scheduled curriculum sprint architecting cloud backend telemetry pipelines, handling concurrent IoT streams, and persisting records in optimized time-series stores.',
+    objectives: [
+      '[Placeholder] Deploy MQTT broker bridges and REST ingestion gateways',
+      '[Placeholder] Configure time-series database tables with automated retention policies',
+      '[Placeholder] Measure end-to-end telemetry propagation latency from edge node to browser'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Gateway architecture diagrams and cloud container environment planning'
+    ],
+    skillsGained: ['Time-Series Databases', 'MQTT Bridges', 'Cloud Ingestion', 'Telemetry Pipelines'],
+    keyLearnings:
+      '[Placeholder] Telemetry throughput metrics will be documented upon milestone execution.',
+    reflection:
+      '[Placeholder] Engineering reflection will be added following cohort review.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 16 sprint milestone'],
+    galleryImages: [
+      {
+        url: '/img/week-2/MIT/Nodes.png',
+        caption: 'Distributed Sensor Node Telemetry Architecture Diagram',
+        type: 'image'
+      }
+    ],
+    tags: ['Week 16', 'ProtoSem', 'Cloud IoT', 'Time-Series', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+  },
+  {
+    weekNumber: 17,
+    id: 'week-17',
+    slug: 'week-17',
+    title: 'Week 17 — Industrial Enclosure Tooling & Rapid Fabrication [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — Environmental Ingress Protection (IP65) [Placeholder]',
+    dateRange: 'Week 17',
+    category: 'Mechanical Prototyping',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Scheduled curriculum sprint engineering weatherproof mechanical enclosures, silicone gasket grooves, internal cable stress relief, and CNC/resin production tooling.',
+    objectives: [
+      '[Placeholder] Model parametric snap-fit and bolted enclosure assemblies in 3D CAD',
+      '[Placeholder] Prototype rubberized weather-seal gaskets for ingress protection',
+      '[Placeholder] Perform mechanical drop testing and thermal convection analysis'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Enclosure parametric revisions and material selection matrices'
+    ],
+    skillsGained: ['Industrial Design', 'Ingress Protection (IP65)', 'Tolerance Analysis', 'Additive Fabrication'],
+    keyLearnings:
+      '[Placeholder] Mechanical test reports will be documented upon milestone execution.',
+    reflection:
+      '[Placeholder] Engineering reflection will be added following cohort review.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 17 sprint milestone'],
+    tags: ['Week 17', 'ProtoSem', 'Mechanical CAD', 'IP65', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+  },
+  {
+    weekNumber: 18,
+    id: 'week-18',
+    slug: 'week-18',
+    title: 'Week 18 — Field Deployment & Operational Stress Trials [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — Real-World Environmental Telemetry Verification [Placeholder]',
+    dateRange: 'Week 18',
+    category: 'Field Trials',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Scheduled curriculum sprint deploying standalone prototypes into live operational field conditions to observe radio performance, sensor drift, and battery lifetime under ambient thermal swings.',
+    objectives: [
+      '[Placeholder] Deploy prototypes across designated physical field test locations',
+      '[Placeholder] Log continuous telemetry data over a continuous 7-day deployment window',
+      '[Placeholder] Correlate environmental temperature swings with sensor measurement variation'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Field trial deployment logistics and data collection protocols'
+    ],
+    skillsGained: ['Field Operations', 'Stress Testing', 'Environmental Validation', 'Reliability Engineering'],
+    keyLearnings:
+      '[Placeholder] Field operational data logs will be documented upon sprint completion.',
+    reflection:
+      '[Placeholder] Engineering reflection will be added following cohort review.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 18 sprint milestone'],
+    galleryImages: [
+      {
+        url: '/img/week-2/MIT/Location.png',
+        caption: 'Field Trial Geographic Node Map & Signal Reception Check',
+        type: 'image'
+      }
+    ],
+    tags: ['Week 18', 'ProtoSem', 'Field Trials', 'Reliability', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+  },
+  {
+    weekNumber: 19,
+    id: 'week-19',
+    slug: 'week-19',
+    title: 'Week 19 — System Optimization & Pre-Production Hardening [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — Static Code Analysis, Watchdogs & Failure Safeguards [Placeholder]',
+    dateRange: 'Week 19',
+    category: 'System Hardening',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Scheduled curriculum sprint conducting comprehensive code reviews, static memory profiling, hardware watchdog safety verification, and unit bill-of-materials cost optimization.',
+    objectives: [
+      '[Placeholder] Execute static code analysis to eliminate buffer leaks and pointer anomalies',
+      '[Placeholder] Stress-test watchdog timer recovery under simulated infinite loops',
+      '[Placeholder] Optimize electronic bill of materials (BOM) for volume cost efficiency'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Code audit checklists and safety failure mode effect analysis (FMEA)'
+    ],
+    skillsGained: ['Static Analysis', 'Watchdog Hardening', 'FMEA', 'BOM Optimization'],
+    keyLearnings:
+      '[Placeholder] Audit and hardening reports will be documented upon milestone execution.',
+    reflection:
+      '[Placeholder] Engineering reflection will be added following cohort review.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 19 sprint milestone'],
+    tags: ['Week 19', 'ProtoSem', 'Hardening', 'FMEA', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+  },
+  {
+    weekNumber: 20,
+    id: 'week-20',
+    slug: 'week-20',
+    title: 'Week 20 — Capstone Exhibition & Fellowship Graduation [Scheduled Placeholder]',
+    subtitle: 'ProtoSem Sprint Milestone — Final Demo Day, Product Pitch & Open-Source Release [Placeholder]',
+    dateRange: 'Week 20',
+    category: 'Capstone & Demo',
+    status: 'Upcoming',
+    summary:
+      '[Placeholder] Final fellowship milestone. Formal capstone exhibition, live physical demonstration to industry evaluators, publication of complete open-source repositories, and graduation ceremony.',
+    objectives: [
+      '[Placeholder] Deliver live operational capstone demonstration to incubation jury',
+      '[Placeholder] Publish open-source documentation, schematics, and firmware repositories',
+      '[Placeholder] Conclude ProtoSem fellowship with validated prototype deliverables'
+    ],
+    activitiesCompleted: [
+      '[Placeholder] Capstone exhibition booth preparation and final deliverable synthesis'
+    ],
+    skillsGained: ['Product Demonstration', 'Open-Source Release', 'Fellowship Capstone', 'Technical Storytelling'],
+    keyLearnings:
+      '[Placeholder] Capstone jury evaluation and fellowship graduation record will be documented upon completion.',
+    reflection:
+      '[Placeholder] Final fellowship reflection will be documented upon capstone graduation.',
+    highlights: ['[Placeholder] Scheduled ProtoSem Week 20 capstone milestone'],
+    tags: ['Week 20', 'ProtoSem', 'Capstone', 'Graduation', 'Upcoming', 'Placeholder'],
+    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
   }
 ];
 

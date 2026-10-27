@@ -242,7 +242,7 @@ export const projectsData: ProjectItem[] = [
     description:
       'A handcrafted, production-grade portfolio website built with Next.js, TypeScript, Tailwind CSS, and Framer Motion featuring a Forge documentary journal and case study dialogs.',
     fullDescription:
-      'This website is engineered as a permanent digital identity platform for the next decade. Architected with Next.js App Router, strict TypeScript models, and a luxury dark/light design system, it showcases my dual expertise in systems engineering and cinematic storytelling. It includes a dedicated Forge Journal 6-week technical sprint log, live LeetCode coding profile integration, project case study modals, and an ambient particle canvas.',
+      'This website is engineered as a permanent digital identity platform for the next decade. Architected with Next.js App Router, strict TypeScript models, and a luxury dark/light design system, it showcases my dual expertise in systems engineering and cinematic storytelling. It includes a dedicated Forge Journal 20-week technical sprint log, live LeetCode coding profile integration, project case study modals, and an ambient particle canvas.',
     category: 'Full Stack',
     status: 'Completed',
     date: '2026-10',

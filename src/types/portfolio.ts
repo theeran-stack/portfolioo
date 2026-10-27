@@ -126,7 +126,7 @@ export interface ForgeWeekEpisode {
   subtitle: string;
   dateRange: string;
   category: string;
-  status: 'Completed' | 'In Progress';
+  status: 'Completed' | 'In Progress' | 'Upcoming';
   summary: string;
   objectives: string[];
   activitiesCompleted: string[];

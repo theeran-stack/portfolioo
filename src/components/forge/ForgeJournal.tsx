@@ -14,6 +14,8 @@ import { forgeProgramInfo, forgeWeeks } from '@/data/forge';
 
 export default function ForgeJournal() {
   const completedCount = forgeWeeks.filter((w) => w.status === 'Completed').length;
+  const inProgressCount = forgeWeeks.filter((w) => w.status === 'In Progress').length;
+  const upcomingCount = forgeWeeks.filter((w) => w.status === 'Upcoming').length;
 
   return (
     <section id="journal" className="py-20 border-t border-[var(--border-subtle)] bg-[var(--bg-primary)]">
@@ -70,7 +72,7 @@ export default function ForgeJournal() {
                   className="btn-primary inline-flex items-center gap-2 py-3 px-6 text-sm font-semibold"
                 >
                   <Compass className="w-4 h-4" />
-                  <span>Open Forge Journal (6 Weeks)</span>
+                  <span>Open Forge Journal ({forgeWeeks.length} Weeks)</span>
                   <ArrowRight className="w-4 h-4 ml-1" />
                 </Link>
               </div>
@@ -100,14 +102,14 @@ export default function ForgeJournal() {
               </div>
 
               <p className="text-xs font-mono text-[var(--accent-primary)] mt-3 font-semibold">
-                Status: 5 Completed • 1 In Progress
+                Status: {completedCount} Completed • {inProgressCount} In Progress{upcomingCount > 0 ? ` • ${upcomingCount} Upcoming` : ''}
               </p>
 
               <Link
                 href="/forge-journal"
                 className="mt-5 text-xs font-semibold text-[var(--accent-primary)] hover:underline inline-flex items-center gap-1"
               >
-                <span>View All 6 Weekly Records</span>
+                <span>View All {forgeWeeks.length} Weekly Records</span>
                 <ArrowRight className="w-3 h-3" />
               </Link>
             </div>
