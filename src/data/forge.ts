@@ -1,4 +1,5 @@
 import { ForgeWeekRecord } from '@/types/portfolio';
+import { week7Tasks } from '@/data/week7Tasks';
 
 export const forgeProgramInfo = {
   programName: 'Forge ProtoSem Fellowship',
@@ -15,9 +16,9 @@ export const forgeProgramInfo = {
     'Document engineering challenges, system architectures, and hardware debugging systematically'
   ],
   totalWeeks: 20,
-  completedWeeks: 5,
+  completedWeeks: 6,
   inProgressWeeks: 1,
-  upcomingWeeks: 14,
+  upcomingWeeks: 13,
   activeCohortYear: '2025 — 2026'
 };
 
@@ -465,36 +466,98 @@ export const forgeWeeks: ForgeWeekRecord[] = [
     weekNumber: 7,
     id: 'week-7',
     slug: 'week-7',
-    title: 'Week 07 — Hardware In-The-Loop Testing & Benchmarking [Scheduled Placeholder]',
-    subtitle: 'ProtoSem Sprint Milestone — Real-Time Signal Profiling & Stress Testing [Placeholder]',
+    title: 'Week 07 — IoT & Connectivity: Connecting Hardware to the Web',
+    subtitle: 'Embedded Web Servers, Adafruit IO MQTT, IFTTT Automation & Firebase Telemetry Dashboards',
     dateRange: 'Week 7',
-    category: 'Hardware Testing',
-    status: 'Upcoming',
+    category: 'IoT, Embedded Systems, Web Development, Cloud Connectivity, and Automation',
+    status: 'Completed',
     summary:
-      '[Placeholder] Scheduled curriculum sprint for hardware-in-the-loop validation, measuring clock drift, power consumption, and signal stability under stress. Technical logs and firmware traces will be published upon milestone execution.',
+      'During Week 07 of ProtoSem, I explored different ways to connect physical hardware with web interfaces and cloud-based platforms. The activities covered local LED control using an ESP32 web server, cloud communication through Adafruit IO and MQTT, event-based automation with IFTTT, and environmental monitoring using Firebase.\n\nThese tasks helped me understand how electronics, programming, web technologies, and cloud services can work together in IoT applications.',
     objectives: [
-      '[Placeholder] Implement automated test scripts for real-time sensor stimulus and capture',
-      '[Placeholder] Characterize current draw profiles across ESP32 active and radio transmit states',
-      '[Placeholder] Validate communication bus error handling under injected line noise'
+      'Deploy an embedded HTTP web server on ESP32 to serve responsive HTML control interfaces',
+      'Establish bidirectional MQTT publish/subscribe feeds on Adafruit IO for cloud device interaction',
+      'Construct event-driven automation recipes using IFTTT applets triggered by hardware state changes',
+      'Interface DHT11 temperature/humidity and LDR light sensors with Firebase Realtime Database',
+      'Stream continuous sensor telemetry and execute remote hardware actuation via cloud dashboards'
     ],
     activitiesCompleted: [
-      '[Placeholder] Hardware bench setup and test methodology definition for Week 07'
+      'Task 1 — ESP32 Web Server & HTML LED Control: Hosted local HTTP web server toggling GPIO',
+      'Task 2 — Adafruit IO Dashboard & MQTT: Connected ESP32 via MQTT client to remote cloud feeds',
+      'Task 3 — IFTTT + Adafruit IO IoT Automation: Built event-driven automation triggers and webhook actions',
+      'Task 4 — Firebase IoT Monitoring Dashboard: Telemetry streaming and remote bulb control with DHT11 & LDR',
+      'Task 5 — Firebase Logging, Automation & Data Export: Historical environmental logging, automated lighting, and CSV data export'
     ],
-    skillsGained: ['Hardware In-The-Loop', 'Signal Profiling', 'Power Profiling'],
+    challengesFaced:
+      'Handling Wi-Fi reconnection recovery without blocking FreeRTOS sensor loops, and structuring synchronous MQTT keep-alive pings.',
+    challengesFixesList: [
+      {
+        challenge: 'ESP32 web server blocking sensor telemetry loops during slow browser HTTP requests.',
+        fix: 'Separated HTTP connection processing from sensor acquisition, optimizing buffer allocations and non-blocking handler callbacks.'
+      },
+      {
+        challenge: 'MQTT socket disconnects under fluctuating 2.4GHz network conditions on Adafruit IO.',
+        fix: 'Configured automated non-blocking exponential backoff reconnection loops in loop() and maintained 15-second keep-alive heartbeats.'
+      }
+    ],
+    skillsGained: [
+      'Embedded Web Servers',
+      'MQTT Protocol',
+      'Adafruit IO Cloud',
+      'IFTTT Automation',
+      'Firebase Realtime Database',
+      'ESP32 Wi-Fi Stack',
+      'Sensor Interfacing (DHT11, LDR)',
+      'REST & WebSockets'
+    ],
+    conceptsLearned: [
+      'Local Web Server vs. Cloud MQTT Architectures',
+      'Publish/Subscribe vs. Request/Response Paradigms',
+      'Event-Driven Webhooks and Triggers',
+      'NoSQL Real-Time Database Synchronization'
+    ],
     keyLearnings:
-      '[Placeholder] Technical observations will be documented upon sprint completion.',
+      'IoT systems bridge physical electronics and cloud platforms through tiered protocols—HTTP for local configuration, MQTT for low-overhead bi-directional telemetry, and cloud databases for persistent real-time analytics.',
     reflection:
-      '[Placeholder] Engineering reflection will be added following cohort review.',
-    highlights: ['[Placeholder] Scheduled ProtoSem Week 07 sprint milestone'],
+      'During Week 07 of ProtoSem, I explored different ways to connect physical hardware with web interfaces and cloud-based platforms. The activities covered local LED control using an ESP32 web server, cloud communication through Adafruit IO and MQTT, event-based automation with IFTTT, and environmental monitoring using Firebase.\n\nThese tasks helped me understand how electronics, programming, web technologies, and cloud services can work together in IoT applications.',
+    highlights: [
+      'Completed 5 dedicated IoT and connectivity engineering tasks with full technical documentation',
+      'Implemented local HTTP server, Adafruit IO MQTT, IFTTT automation, and Firebase cloud telemetry',
+      'Integrated physical DHT11 and LDR sensors with real-time web monitoring and remote relay controls'
+    ],
     galleryImages: [
       {
-        url: '/img/IMG20260728162105.jpg.jpeg',
-        caption: 'Cohort Prototyping & Benchmarking Lab Workspace',
+        url: '/img/week-7/freertos-esp32-node.jpeg',
+        caption: 'ESP32 Dual-Core Prototyping Node Bench Setup with Sensor Interfacing',
+        type: 'image'
+      },
+      {
+        url: '/img/week-7/hardware-setup-sd.jpeg',
+        caption: 'Hardware Sensor Testing Bench with MicroSD Telemetry Logger',
+        type: 'image'
+      },
+      {
+        url: '/img/week-7/week7-photo1.png',
+        caption: 'ESP32 Wi-Fi & MQTT Wireless Cloud Integration Architecture',
         type: 'image'
       }
     ],
-    tags: ['Week 07', 'ProtoSem', 'Hardware Testing', 'Upcoming', 'Placeholder'],
-    teamCredits: [{ role: 'Fellow', name: 'Theeran P.' }]
+    tags: [
+      'IoT',
+      'ESP32',
+      'Arduino IDE',
+      'Adafruit IO',
+      'MQTT',
+      'IFTTT',
+      'Firebase',
+      'Web Server',
+      'Sensors'
+    ],
+    tasks: week7Tasks,
+    repoLink: 'https://github.com/theeran-stack/HomePulse',
+    teamCredits: [
+      { role: 'IoT Systems & Firmware Developer', name: 'Theeran P.' },
+      { role: 'Cohort Review Lead', name: 'Forge ProtoSem Faculty' }
+    ]
   },
   {
     weekNumber: 8,

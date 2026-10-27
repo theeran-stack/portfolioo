@@ -141,7 +141,68 @@ export interface ForgeWeekEpisode {
   galleryImages?: { url: string; caption: string; type: 'image' | 'video' }[];
   tags: string[];
   teamCredits?: ForgeTeamCredit[];
+  tasks?: ForgeActivityTask[];
   repoLink?: string;
+}
+
+export interface ForgeActivityTask {
+  taskNumber: number;
+  taskId: string;
+  title: string;
+  category: string;
+  shortDescription: string;
+  thumbnailUrl?: string;
+  technologies: string[];
+  overview: {
+    objective: string;
+    problemGoal: string;
+    summary: string;
+    description: string;
+  };
+  concepts: {
+    title: string;
+    explanation: string;
+    points: string[];
+  };
+  systemDesign: {
+    workflow: string;
+    steps: { step: string; description: string }[];
+  };
+  hardwareSoftware: {
+    hardware: string[];
+    software: string[];
+    protocols: string[];
+  };
+  wiringSetup: {
+    description: string;
+    pinConnections: { component: string; pin: string; esp32Pin: string; note: string }[];
+  };
+  implementation: {
+    filename: string;
+    language: string;
+    code: string;
+    keyFunctions: { name: string; purpose: string }[];
+    repositoryUrl: string;
+  };
+  configuration: {
+    title: string;
+    steps: string[];
+  };
+  evidence: {
+    images?: { url: string; caption: string; type: 'image' | 'video' }[];
+    videoUrl?: string;
+    videoCaption?: string;
+    terminalLogs?: string;
+    placeholderNotice?: string;
+  };
+  challengesFixes: {
+    problem: string;
+    cause: string;
+    investigation: string;
+    fix: string;
+    outcome: string;
+  }[];
+  reflection: string;
 }
 
 export interface CodingProfile {
