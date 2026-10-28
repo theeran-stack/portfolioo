@@ -741,7 +741,7 @@ Connecting to Adafruit IO MQTT Broker... MQTT Broker Connected!
     category: 'Environmental Monitoring and Remote Control',
     shortDescription:
       'Explored an ESP32-based environmental monitoring and remote bulb-control system using Firebase, DHT11, and LDR sensors.',
-    thumbnailUrl: '/img/week-7/task-4/task-4.jpg',
+    thumbnailUrl: '/img/week-7/task-4/dashboard-on.png',
     technologies: ['ESP32', 'Firebase Realtime Database', 'DHT11', 'LDR Sensor', 'Relay Module', 'WebSockets', 'C++'],
     overview: {
       objective:
@@ -991,14 +991,24 @@ void loop() {
     evidence: {
       images: [
         {
-          url: '/img/week-7/task-4/task-4.jpg',
-          caption: 'Task 4: Firebase IoT Realtime Telemetry Dashboard & Bulb Remote Actuation',
+          url: '/img/week-7/task-4/dashboard-on.png',
+          caption: 'HomePulse Firebase Dashboard: Live Environmental Telemetry & Bulb State ON',
+          type: 'image'
+        },
+        {
+          url: '/img/week-7/task-4/dashboard-off.png',
+          caption: 'HomePulse Firebase Dashboard: Real-time Actuator Toggled to State OFF',
+          type: 'image'
+        },
+        {
+          url: '/img/week-7/task-4/login.png',
+          caption: 'HomePulse Cloud Platform: Secure User Authentication Portal',
           type: 'image'
         }
       ],
       videoUrl: '/img/week-7/task-4/task-4.mp4',
-      videoCaption: 'Task 4 Live Demonstration: Firebase IoT Monitoring Dashboard & Control (Vertical View)',
-      videoOrientation: 'portrait',
+      videoCaption: 'Task 4 Live Demonstration: HomePulse Real-time Telemetry & Cloud Actuator Control',
+      videoOrientation: 'landscape',
       terminalLogs: `Wi-Fi Connected! IP: 192.168.1.108
 Firebase Realtime Stream Listener Active on /controls
 [TELEMETRY] Temp: 28.4 C, Humidity: 64.0 %, Light: 72 % (Raw: 2950)

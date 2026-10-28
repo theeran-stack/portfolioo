@@ -541,8 +541,8 @@ export const forgeWeeks: ForgeWeekRecord[] = [
         type: 'image'
       },
       {
-        url: '/img/week-7/task-4/task-4.jpg',
-        caption: 'Task 4: Firebase IoT Environmental Monitoring & Appliance Control Dashboard',
+        url: '/img/week-7/task-4/dashboard-on.png',
+        caption: 'Task 4: HomePulse Firebase IoT Real-time Telemetry & Appliance Control Dashboard',
         type: 'image'
       },
       {
